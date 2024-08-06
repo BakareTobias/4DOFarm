@@ -1,13 +1,10 @@
 //ARDUINO TO CONTROL A 4DOF SG90 ROBOTIC ARM USING BLUETOOTH(HC-05)
 //include libraries
 #include "Arduino.h"
-#include <SoftwareSerial.h>
 #include <Servo.h>
 
 // initialize hc-05 rx and tx pins(rx pin on arduino -> tx pin on hc-05 )
-const byte rxPin = 8;
-const byte txPin = 9;
-SoftwareSerial BTSerial(rxPin, txPin); // RX TX
+
 
 // creating servo objects for each DOF
 Servo base;
@@ -15,15 +12,9 @@ Servo shoulder;
 Servo elbow;
 Servo wrist;
 
-unsigned long MOVING_TIME = 3000;
-unsigned long moveStartTime = millis();
-
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(rxPin, INPUT);
-  pinMode(txPin, OUTPUT);
-  BTSerial.begin(9600);
   Serial.begin(9600);
 
   //attaching pins to each servo
@@ -58,9 +49,9 @@ String buffer = "";
 
 void loop() {
 
-  while (BTSerial.available() > 0) {
+  while (Serial.available() > 0) {
 
-    char data = (char) BTSerial.read(); 
+    char data = (char) Serial.read(); 
     buffer += data;
         Serial.println(buffer);
 
@@ -87,7 +78,7 @@ void loop() {
     }else if(data == 'w'){
       w_target = buffer.toInt();
       w_target = round(w_target);
-      b_target = constrain(b_target,0,180);
+      w_target = constrain(w_target,0,180);
 
       buffer = "";
 
@@ -102,7 +93,6 @@ void loop() {
   elbow.write(e_target);
   wrist.write(w_target); */
    // Smooth movement by gradually updating servo positions
-   delay(200);
   smoothMove(base, b_target, b_current);
   smoothMove(shoulder, s_target, s_current);
   smoothMove(elbow, e_target, e_current);
