@@ -48,7 +48,7 @@ I assembled the arm using this link https://youtu.be/n3G2YBZq3PQ?feature=shared.
 
 ### Arduino
 
-The Arduino script is available in this repository: [insert link].
+The Arduino script is the one in this repository.
 
 ### MIT App Inventor Website
 
