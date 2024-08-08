@@ -42,7 +42,7 @@ MIT App Inventor is a high-level, block-based visual programming language mainta
 
 ### Assembly
 
-I assembled the arm using this [link](insert link).
+I assembled the arm using this link https://youtu.be/n3G2YBZq3PQ?feature=shared.
 
 ### Circuit Connections
 
