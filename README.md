@@ -2,7 +2,7 @@
 
 On August 3rd, 2024, I completed a robotic arm that I started working on a few weeks prior. It is a 4-Degree of Freedom robotic arm controlled by a self-made remote control app via a Bluetooth module.
 
-## Theory
+## Overview
 
 A robotic arm is a type of programmable mechanical arm that mimics the functions of a human arm. It can be an independent mechanism or part of a more complex system. The links of such a manipulator are connected by joints, allowing either rotational motion or translational displacement.
 
@@ -53,3 +53,11 @@ The Arduino script is the one in this repository.
 ### MIT App Inventor Website
 
 The app was designed using MIT App Inventor.
+
+Here is the Design section:
+<img width="959" alt="mitAppInventorDesigner" src="https://github.com/user-attachments/assets/2a814937-cd08-4cf1-910c-932be7bb5b9d">
+
+And here is the code block that runs it:
+<img width="959" alt="mitAppInventorBlocks" src="https://github.com/user-attachments/assets/61c70605-8822-4803-babd-2c18311aad50">
+
+
