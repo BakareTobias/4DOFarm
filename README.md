@@ -45,10 +45,13 @@ MIT App Inventor is a high-level, block-based visual programming language mainta
 I assembled the arm using this link https://youtu.be/n3G2YBZq3PQ?feature=shared.
 
 ### Circuit Connections
+Note: TinkerCAD does not have the HC-05, so this 8 pin header represents it
+<img width="617" alt="4DOF with HC-05 breadboard" src="https://github.com/user-attachments/assets/95a910ed-88e9-47a9-b358-d0b48038e834">
 
 ### Arduino
 
-The Arduino script is the one in this repository.
+[mitAppControlRobotArm.ino
+](https://github.com/BakareTobias/4DOFarm/blob/main/mitAppControlRobotArm.ino)
 
 ### MIT App Inventor Website
 
