@@ -2,6 +2,14 @@
 
 On August 3rd, 2024, I completed a robotic arm that I started working on a few weeks prior. It is a 4-Degree of Freedom robotic arm controlled by a self-made remote control app via a Bluetooth module.
 
+## Demo
+
+
+https://github.com/user-attachments/assets/34b1c13f-8feb-48b8-ad98-24658fa6e2b4
+
+
+
+
 ## Overview
 
 A robotic arm is a type of programmable mechanical arm that mimics the functions of a human arm. It can be an independent mechanism or part of a more complex system. The links of such a manipulator are connected by joints, allowing either rotational motion or translational displacement.
